@@ -1,0 +1,45 @@
+## Key Learnings from the INN Hotels Classification Project
+
+### Project Overview
+This supervised learning project focused on predicting hotel booking cancellations using classification models. I built and evaluated both **Logistic Regression** and **Decision Tree** models on a real-world hotel dataset. The project emphasized model interpretability, threshold tuning, and actionable insights for the hospitality sector.
+
+---
+
+### Technical Skills Gained
+
+#### Exploratory Data Analysis (EDA)
+- Performed univariate and bivariate analysis to understand customer behavior.
+- Identified key variables such as `lead_time`, `avg_price_per_room`, and `repeated_guest` as strong predictors of cancellations.
+- Used visualizations (bar plots, box plots, heatmaps) to derive insights and inform model decisions.
+
+#### ⚙Data Preprocessing & Feature Engineering
+- Handled missing values, detected outliers, and created dummy variables for categorical features.
+- Split data into train/test sets with stratification to maintain class balance.
+
+#### Model Building & Evaluation
+- Built a **Logistic Regression model** using `statsmodels` with VIF and p-value analysis to assess feature relevance.
+- Tuned classification threshold for Logistic Regression based on F1-score optimization.
+- Constructed multiple **Decision Trees** (unpruned, pre-pruned, post-pruned) using `sklearn`, followed by:
+  - Cost Complexity Pruning (`ccp_alpha`)
+  - Cross-validation for alpha selection
+  - Model comparison based on F1, precision, recall, and accuracy
+
+---
+
+### Business Impact & Interpretability
+- Generated insights for hotel management: cancellations were strongly linked to longer lead times, non-repeated guests, and higher room prices.
+- Offered **policy recommendations** such as flexible pricing for repeat guests and lead-time-based refund strategies.
+- Prioritized **model transparency** by visualizing all trees and comparing feature importances.
+
+---
+
+### Areas of Improvement (**Reflection**)
+- Initially overlooked removing insignificant variables in Logistic Regression and interpreting odds ratios.
+- Threshold tuning was completed later and should have been integrated earlier into the modeling flow.
+- Learned to better sequence modeling steps and ensure early inclusion of all rubric items.
+
+---
+
+### Tools & Libraries Used
+- **Python:** pandas, numpy, matplotlib, seaborn, sklearn, statsmodels
+- **Jupyter Notebook** for model development and commentary
