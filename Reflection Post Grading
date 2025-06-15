@@ -1,4 +1,4 @@
-# **INN** Hotels Booking Cancellation – Classification Project
+# INN Hotels Booking Cancellation – Classification Project
 
 ## Project Overview
 This supervised learning project aimed to predict hotel booking cancellations using real-world data from the hospitality sector. I implemented and evaluated two core classification models — **Logistic Regression** and **Decision Tree Classifier** — with a focus on model interpretability, threshold tuning, and actionable business recommendations.
@@ -46,7 +46,9 @@ This supervised learning project aimed to predict hotel booking cancellations us
 - Learned how to tune thresholds, evaluate pruning strategies, and interpret classification outputs.
 - Gained confidence in comparing multiple models and selecting the best based on business needs.
 - This was my **first end-to-end classification project** — more advanced than linear regression, and highly engaging.
+
 ---
+
 ## Tools & Libraries
 - Python, pandas, numpy, matplotlib, seaborn, `statsmodels`, `scikit-learn`
 - Jupyter Notebooks, GitHub
