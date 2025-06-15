@@ -1,4 +1,4 @@
-# INN Hotels Booking Cancellation – Classification Project
+# **INN** Hotels Booking Cancellation – Classification Project
 
 ## Project Overview
 This supervised learning project aimed to predict hotel booking cancellations using real-world data from the hospitality sector. I implemented and evaluated two core classification models — **Logistic Regression** and **Decision Tree Classifier** — with a focus on model interpretability, threshold tuning, and actionable business recommendations.
