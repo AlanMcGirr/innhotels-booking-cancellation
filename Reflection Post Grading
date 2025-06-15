@@ -1,60 +1,52 @@
-🏨 INN Hotels Booking Cancellation – Classification Project
+# INN Hotels Booking Cancellation – Classification Project
 
-📌 Project Overview
+## Project Overview
+This supervised learning project aimed to predict hotel booking cancellations using real-world data from the hospitality sector. I implemented and evaluated two core classification models — **Logistic Regression** and **Decision Tree Classifier** — with a focus on model interpretability, threshold tuning, and actionable business recommendations.
 
-This supervised learning project aimed to predict hotel booking cancellations using real-world data from the hospitality sector. I implemented and evaluated two core classification models — Logistic Regression and Decision Trees — with a focus on model interpretability, threshold tuning, and actionable business recommendations.
+---
 
-⸻
-🔍 Exploratory Data Analysis (EDA)
-	•	Conducted univariate and bivariate analysis to understand booking behavior.
-	•	Identified strong predictors of cancellation: lead_time, avg_price_per_room, repeated_guest.
-	•	Used visual tools (bar plots, box plots, heatmaps) to uncover key data trends.
+## Exploratory Data Analysis (EDA)
+- Conducted univariate and bivariate analysis to understand booking behavior.
+- Identified strong predictors of cancellation: `lead_time`, `avg_price_per_room`, `repeated_guest`.
+- Used visual tools such as bar plots, box plots, and heatmaps to uncover insights.
 
-⸻
+---
 
-🧹 Data Preprocessing & Feature Engineering
-	•	Treated missing values and outliers.
-	•	Created dummy variables for categorical features.
-	•	Stratified train/test split to preserve class distribution.
+## Data Preprocessing & Feature Engineering
+- Treated missing values and detected outliers (without removal due to model robustness).
+- Created dummy variables for categorical features using one-hot encoding.
+- Performed stratified train/test split to preserve class balance.
 
-⸻
+---
 
-⚙️ Model Building & Evaluation
+## Model Building & Evaluation
 
-Logistic Regression
-	•	Built using statsmodels, checked VIFs and p-values to assess multicollinearity and feature relevance.
-	•	Initially skipped odds interpretation — later noted as a learning point.
-	•	Tuned classification threshold based on F1-score optimization.
+### Logistic Regression
+- Built using `statsmodels`; checked for multicollinearity (VIF) and p-values.
+- Initially skipped odds interpretation — added later as part of reflection.
+- Tuned classification threshold based on F1-score optimization.
 
-Decision Tree Classifier
-	•	Built and evaluated:
-	•	Unpruned Tree
-	•	Pre-pruned Tree (via GridSearchCV)
-	•	Post-pruned Tree (via Cost Complexity Pruning, ccp_alpha)
-	•	Compared models using F1, precision, recall, and accuracy scores.
+### Decision Tree Classifier
+- Built and evaluated:
+  - Unpruned Tree
+  - Pre-pruned Tree (via GridSearchCV)
+  - Post-pruned Tree (via Cost Complexity Pruning with `ccp_alpha`)
+- Compared performance based on F1, precision, recall, and accuracy.
 
-⸻
+---
 
-📈 Business Insights & Recommendations
-	•	Cancellations were more likely from:
-	•	Customers with longer lead times
-	•	First-time bookers
-	•	High room price segments
-	•	Recommended flexible refund policies, loyalty-based pricing, and early detection alerts.
-	•	Visualized all trees and emphasized interpretability for stakeholder trust.
+## Business Insights & Recommendations
+- Bookings with longer `lead_time`, no special requests, or by new guests were more likely to cancel.
+- Suggested loyalty pricing, lead-time-based refund strategies, and prioritizing reliable segments.
+- Emphasized model transparency with visualizations of decision paths and feature importances.
 
-⸻
+---
 
-🧠 Key Learnings & Reflection
-	•	Logistic Regression: Forgot to remove insignificant predictors and interpret odds initially.
-	•	Threshold Tuning: Completed late; in future, integrate earlier in the modeling pipeline.
-	•	Model Sequencing: Learned to align steps better with business questions and rubric expectations.
-	•	Gained hands-on confidence with pruning techniques and model performance tuning.
-
-⸻
-
-🛠 Tools & Libraries
-	•	Python: pandas, numpy, matplotlib, seaborn, sklearn, statsmodels
-	•	Platform: Jupyter Notebook for code, markdown explanations, and visual output.
-
-⸻
+## Reflection & Learnings
+- Learned how to tune thresholds, evaluate pruning strategies, and interpret classification outputs.
+- Gained confidence in comparing multiple models and selecting the best based on business needs.
+- This was my **first end-to-end classification project** — more advanced than linear regression, and highly engaging.
+---
+## Tools & Libraries
+- Python, pandas, numpy, matplotlib, seaborn, `statsmodels`, `scikit-learn`
+- Jupyter Notebooks, GitHub
