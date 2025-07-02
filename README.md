@@ -1,7 +1,11 @@
 # innhotels-booking-cancellation
 Predicting hotel booking cancellations using logistic regression and decision trees. Includes EDA, pruning techniques, and business insights for INN Hotels.
 # INN Hotels: Booking Cancellation Prediction
+ Hotel Booking Cancellation Predictor
 
+**Live Demo**: [Try it here](https://claude.ai/public/artifacts/5a173a58-6ea9-41e2-bd03-602988cc8834)
+
+This project predicts the probability of a hotel booking being canceled, along with confidence scores and actionable recommendations.
 ## Project Overview
 This project focuses on predicting hotel booking cancellations using supervised learning techniques. By analyzing booking-related data, we aim to identify key factors that influence cancellations and recommend actionable strategies to reduce them.
 
